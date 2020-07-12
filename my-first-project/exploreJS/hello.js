@@ -10,3 +10,10 @@
 
 // console.log(number + number2);
 // console.log(typeof (number + number2));
+
+var number = 12.0001;
+
+console.log(Math.round(number));
+console.log(Math.random(number));
+console.log(Math.floor(number));
+console.log(Math.ceil(number));
