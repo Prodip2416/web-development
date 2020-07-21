@@ -24,7 +24,13 @@
 
         document.getElementById('first-item').addEventListener('click', function(){
             console.log('First Item Click.');
+            // event.stopPropagation();
+            event.stopImmediatePropagation();
         });
+        document.getElementById('first-item').addEventListener('click', function(){
+            document.body.style.backgroundColor='gray';
+        });
+        
         document.getElementById('MyList').addEventListener('click', function(){
             console.log('Ul Clicked.');
         });
