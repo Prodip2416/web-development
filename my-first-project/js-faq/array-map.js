@@ -8,4 +8,5 @@ function func(){
     console.log(new_arr);
 }
 
+
 func();
