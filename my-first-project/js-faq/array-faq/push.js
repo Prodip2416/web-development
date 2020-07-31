@@ -1,4 +1,4 @@
-var my_array = [1,2,3];
+my_array = [1,2,3];
 
 console.log(my_array);
 console.log(my_array.push(4,5,"Prodip",true,));
