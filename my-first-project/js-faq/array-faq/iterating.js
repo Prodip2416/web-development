@@ -7,9 +7,13 @@ console.log(array[2]);
 
 var array_new = [1,2,3,4,5];
 
-for(var index = 0; index < array_new.length; index++){
-    console.log(array_new[index]);
-}
+// for(var index = 0; index < array_new.length; index++){
+//     console.log(array_new[index]);
+// }
+
+array_new.forEach(function(item){
+    console.log(item);
+});
 
 // Result
 // geeks
