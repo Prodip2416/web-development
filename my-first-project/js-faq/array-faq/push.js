@@ -7,4 +7,4 @@ console.log(my_array);
 // Result
 // [ 1, 2, 3 ]
 // 7
-// [ 1, 2, 3, 4, 5, 'Prodip', true ]
+// [ 1, 2, 3, 4, 5, 'Prodip', true ] 
