@@ -2,5 +2,5 @@ var str = "It Is A Great Day.";
 
 console.log(str.toLowerCase());
 
-// rESULT
+// Result
 // it is a great day.
