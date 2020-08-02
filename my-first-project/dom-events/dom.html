@@ -10,6 +10,12 @@
     <p class="lorem" data-p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     <p class="lorem" id="data" data-p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, assumenda.</p>
     <p class="lorem" data-p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat accusamus veniam!</p>
+
+    <ul id="list">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+    </ul>
     <script>
         console.log(document.body);
         console.log(document.getElementsByClassName('lorem'));
@@ -17,8 +23,13 @@
         console.log(document.querySelectorAll('.lorem'));
         console.log(document.querySelector('.lorem'));
         console.log(document.getElementById('data'));
-        console.log(document.querySelector('p'));
+        console.log(document.querySelector('[data-p]'));
         console.log(document.querySelectorAll('[data-p]'));
+
+        const ul = document.getElementById('list');
+        const newItem = document.createElement('li');
+        newItem.innerHTML = 'Added By JavaScript';
+        ul.appendChild(newItem);
     </script>
 </body>
 </html>
