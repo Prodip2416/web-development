@@ -7,11 +7,18 @@
 </head>
 <body>
     <h1>Lorem, ipsum dolor.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, assumenda.</p>
-
+    <p class="lorem" data-p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="lorem" id="data" data-p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, assumenda.</p>
+    <p class="lorem" data-p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat accusamus veniam!</p>
     <script>
         console.log(document.body);
+        console.log(document.getElementsByClassName('lorem'));
+        console.log(document.getElementsByTagName('p'));
+        console.log(document.querySelectorAll('.lorem'));
+        console.log(document.querySelector('.lorem'));
+        console.log(document.getElementById('data'));
+        console.log(document.querySelector('p'));
+        console.log(document.querySelectorAll('[data-p]'));
     </script>
 </body>
 </html>
