@@ -21,14 +21,15 @@
 
         firstItem.addEventListener('click', function(){
             console.log('First Item Click');
+            event.stopPropagation();
         });
-        myList.addEventListener('click', function(){
+        myList.addEventListener('click', function(){;
             console.log('myList Item Click');
         });
         section.addEventListener('click', function(){
             console.log('section Item Click');
         });
-        
+
     </script>
 </body>
 </html>
