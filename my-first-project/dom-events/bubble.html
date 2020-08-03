@@ -13,21 +13,41 @@
             <li>list - 2</li>
             <li>list - 3</li>
         </ul>
+        <button id="addItem">Add New Item</button>
     </div>
     <script>
         const section = document.getElementById('section');
         const myList = document.getElementById('my-list');
         const firstItem = document.getElementById('first');
+        const myAllList = document.getElementsByTagName('li');
+        const addItem = document.getElementById('addItem');
 
-        firstItem.addEventListener('click', function(){
-            console.log('First Item Click');
-            event.stopPropagation();
+        // firstItem.addEventListener('click', function(){
+        //     console.log('First Item Click');
+        //     event.stopPropagation();
+        // });
+        // myList.addEventListener('click', function(){;
+        //     console.log('myList Item Click');
+        // });
+        // section.addEventListener('click', function(){
+        //     console.log('section Item Click');
+        // });
+
+        // for(var i = 0; i < myAllList.length; i++){
+        //     myAllList[i].addEventListener('click', function(){
+        //        // console.log(event.target, event.target.parentNode);
+        //         event.target.parentNode.removeChild(event.target);
+        //     });
+        // }
+        myList.addEventListener('click', function(){
+            // console.log(event.target, event.target.parentNode);
+            event.target.parentNode.removeChild(event.target);
         });
-        myList.addEventListener('click', function(){;
-            console.log('myList Item Click');
-        });
-        section.addEventListener('click', function(){
-            console.log('section Item Click');
+
+        addItem.addEventListener('click', function(){
+            var item = document.createElement('li');
+            item.innerHTML = "Brand New Item";
+            myList.appendChild(item);
         });
 
     </script>
